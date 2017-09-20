@@ -18,7 +18,95 @@ body {
   margin: 0;
   color: #244751;
   background-color: #eee;
+  font-family: 'Roboto Condensed', sans-serif;
 }
+
+main{
+  width: 450px;
+  background-color: white;
+  margin: 0 auto;
+  padding-top: 120px;
+  height: 100%;
+}
+
+.new-tweet{
+  display: none;
+}
+
+#tweets-container{
+  margin: 2em;
+}
+
+.tweet-article:hover .tweet-article-header{
+  opacity: 1;
+}
+
+.tweet-article:hover .icon-container{
+  display: block;
+}
+
+#tweets-container .tweet-article {
+  border: lightgrey solid 1px;
+  border-radius: 5px;
+  margin: 3em 0;
+}
+
+.tweet-article-header{
+  background-color: lightgrey;
+  overflow: auto;
+  opacity: 0.6;
+}
+
+#tweets-container .tweet-article:hover{
+  border: darkgrey solid 1px;
+}
+
+.tweet-article footer{
+  border-top: 1px solid lightgrey;
+  padding: 3% 5%;
+  font-size: 0.8em;
+  position: relative;
+}
+
+.avatar-img{
+  width: 3em;
+  float: left;
+  margin: 5% 0 5% 5%;
+}
+
+h3{
+  float: left;
+  margin-left: 0.5em;
+  font-size: 1.4em;
+}
+
+.post-name{
+  float: right;
+  margin: 5%;
+  color: grey;
+  font-size: 0.9em;
+}
+
+.tweet-article-text{
+  margin-left: 5%;
+  font-size: 1.2em;
+}
+
+.opacity{
+  opacity: 1;
+}
+
+.icon-container{
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  display: none;
+}
+
+.icon-container img{
+  width: 2em;
+}
+
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions

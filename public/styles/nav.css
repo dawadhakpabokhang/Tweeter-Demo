@@ -1,0 +1,46 @@
+#nav-bar{
+  position: fixed;
+  background-color: #00a087;
+  color: #e8fdff;
+  height: 80px;
+  width: 100%;
+  padding: 0 2em;
+  z-index: 10000;
+}
+
+#nav-bar .logo , #nav-bar .header{
+  float: left;
+}
+
+#nav-bar .logo {
+  width: 80px;
+  height: 80px;
+}
+
+#nav-bar .header {
+  font-size: 200%;
+  margin-left: 5px;
+  text-align: center;
+  vertical-align: middle;
+  height: 80px;
+  line-height: 80px;
+}
+
+.slide-button{
+  width: 8em;
+  background-color: white;
+  float: right;
+  border-radius: 5px;
+  margin: 0.9em 0;
+}
+
+.slide-button img{
+  width: 3em;
+  margin-left: 0.5em;
+}
+
+.slide-button p{
+  color: #00a087;
+  float: right;
+  padding-right: 0.5em;
+}

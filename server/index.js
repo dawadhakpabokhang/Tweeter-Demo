@@ -26,6 +26,13 @@ const DataHelpers = require("./lib/data-helpers.js")(db);
 // so it can define routes that use it to interact with the data layer.
 const tweetsRoutes = require("./routes/tweets")(DataHelpers);
 
+
+// app.post("/tweets", (req, res) => {
+//   console.log("itworks");
+//   res.status(200).send();
+//   res.redirect('/');
+// });
+
 // Mount the tweets routes at the "/tweets" path prefix:
 app.use("/tweets", tweetsRoutes);
 
