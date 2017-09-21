@@ -26,6 +26,10 @@
   line-height: 80px;
 }
 
+.slide-button:hover .compose-button{
+  font-weight: bold;
+}
+
 .slide-button{
   width: 8em;
   background-color: white;
