@@ -19,3 +19,15 @@ This repository is the starter code for the project: Students will fork and clon
 - Chance
 - Mongodb
 - Md5
+
+![This is the home page]
+(https://github.com/dawadhakpabokhang/Tweeter-Demo/blob/master/docs/Page%20without%20New%20Tweet%20Section.png)
+
+![This is how the toggle function works]
+(https://github.com/dawadhakpabokhang/Tweeter-Demo/blob/master/docs/Page%20with%20New%20Tweet%20Section.png)
+
+![Textarea box with input from user]
+(https://github.com/dawadhakpabokhang/Tweeter-Demo/blob/master/docs/Page%20with%20text%20in%20textarea.png)
+
+![This is when a New Tweet gets posted]
+(https://github.com/dawadhakpabokhang/Tweeter-Demo/blob/master/docs/Page%20with%20new%20posted%20tweet.png)
