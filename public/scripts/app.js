@@ -80,9 +80,7 @@ function createTweetElement(obj){
 // Function to render and sort tweets
 function renderTweets(arry){
   // sorts list of tweets
-  arry.sort(function (a, b) {
-    return a.created_at < b.created_at;
-  });
+  arry.reverse();
   // iterates through tweets and adds them to tweet container div
   for(let i of arry){
     let $tweet = createTweetElement(i);
