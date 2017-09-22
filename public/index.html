@@ -4,6 +4,9 @@
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
 
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
 
@@ -55,12 +58,11 @@
         <form action="/tweets" method="POST" id="theForm">
           <textarea class="tweet-text" name="text" placeholder="What are you humming about?"></textarea>
           <input type="submit" value="Tweet">
-          <span class="counter"></span>
+          <span class="counter">140</span>
         </form>
       </section>
 
       <div id="tweets-container">
-
       </div>
     </main>
 

@@ -50,9 +50,9 @@ var data = [
   }
 ];
 
-
+// function to create a new tweet
 function createTweetElement(obj){
-
+  // fixes the original time to something users can understand
   let time = moment(obj.created_at).fromNow();
 
   return $(`
@@ -76,6 +76,8 @@ function createTweetElement(obj){
           </article>`)
 }
 
+
+// Function to render and sort tweets
 function renderTweets(arry){
   // sorts list of tweets
   arry.sort(function (a, b) {
@@ -88,7 +90,7 @@ function renderTweets(arry){
   }
 }
 
-
+// Function to load tweets from the database
 function loadTweets() {
   $.ajax({
     url: '/tweets/',
@@ -102,7 +104,6 @@ function loadTweets() {
 
 loadTweets(data);
 
-
 $(document).ready(function() {
 
   renderTweets(data);
@@ -115,10 +116,13 @@ $(document).ready(function() {
     let formData = $('#theForm').serialize();
     let input = $('.tweet-text').val();
 
+    // if input of user is empty or null return an alert
     if(input === "" || input === null ){
       alert("Please Type Something");
+    // if input of user is longer than 140 characters return an alert
     }else if(input.length > 140){
       alert("Too Many Characters");
+    // if everything passes then post the tweet and empty the text box
     }else {
     // renderTweets([formData]);
       $.ajax({
@@ -152,4 +156,12 @@ function escape(str) {
 }
 
 
-
+// when user presses enter on keyboard the tweet gets posted
+$(document).ready(function() {
+  $('#theForm textarea').keydown(function(event) {
+    if (event.keyCode == 13) {
+      $(this.form).submit();
+      return false;
+     }
+  });
+});

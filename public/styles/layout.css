@@ -29,20 +29,15 @@ main{
   height: 100%;
 }
 
+
+/******** Styling for New Tweets Section *********/
+
 .new-tweet{
   display: none;
 }
 
 #tweets-container{
   margin: 2em;
-}
-
-.tweet-article:hover .tweet-article-header{
-  opacity: 1;
-}
-
-.tweet-article:hover .icon-container{
-  display: block;
 }
 
 #tweets-container .tweet-article {
@@ -57,9 +52,6 @@ main{
   opacity: 0.6;
 }
 
-#tweets-container .tweet-article:hover{
-  border: darkgrey solid 1px;
-}
 
 .tweet-article footer{
   border-top: 1px solid lightgrey;
@@ -88,8 +80,9 @@ h3{
 }
 
 .tweet-article-text{
-  margin-left: 5%;
+  margin: 0 5%;
   font-size: 1.2em;
+  overflow-wrap: break-word;
 }
 
 .opacity{
@@ -107,7 +100,19 @@ h3{
   width: 2em;
 }
 
+/******** Styling for Hover States *********/
 
+#tweets-container .tweet-article:hover{
+  border: darkgrey solid 1px;
+}
+
+.tweet-article:hover .tweet-article-header{
+  opacity: 1;
+}
+
+.tweet-article:hover .icon-container{
+  display: block;
+}
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
